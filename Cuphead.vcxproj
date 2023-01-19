@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32075AF5-E154-3BD4-A866-DED54E3164AE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>Cuphead</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\bin\Cuphead\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cuphead.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cuphead</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\bin\Cuphead\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Cuphead.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Cuphead</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\bin\Cuphead\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Cuphead.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Cuphead</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\bin\Cuphead\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Cuphead.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Cuphead</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/Box2D/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/chipmunk/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/webp/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/png/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/Debug/Cuphead.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Debug/Cuphead.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/Box2D/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/chipmunk/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/webp/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/png/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/Release/Cuphead.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/Release/Cuphead.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/Box2D/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/chipmunk/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/webp/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/png/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/MinSizeRel/Cuphead.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/MinSizeRel/Cuphead.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/Box2D/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/chipmunk/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/webp/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/png/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\bilga\Desktop\picotest\Cuphead\Classes;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\audio\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\extensions;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\editor-support;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\base;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\platform\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\recast\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\tinyxml2\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxhash\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\xxtea\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\clipper\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\edtaa3func\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\ConvertUTF\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\poly2tri\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\md5\..;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\unzip\.;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\include\bullet;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\include\win32;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/bilga/Desktop/picotest/Cuphead/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/RelWithDebInfo/Cuphead.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/bin/Cuphead/RelWithDebInfo/Cuphead.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bilga\Desktop\picotest\Cuphead\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/bilga/Desktop/picotest/Cuphead/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/bilga/Desktop/picotest/Cuphead -BC:/Users/bilga/Desktop/picotest/Cuphead/proj.win32 --check-stamp-file C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCXXCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeRCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/bilga/Desktop/picotest/Cuphead/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/bilga/Desktop/picotest/Cuphead -BC:/Users/bilga/Desktop/picotest/Cuphead/proj.win32 --check-stamp-file C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCXXCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeRCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/bilga/Desktop/picotest/Cuphead/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/bilga/Desktop/picotest/Cuphead -BC:/Users/bilga/Desktop/picotest/Cuphead/proj.win32 --check-stamp-file C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCXXCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeRCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/bilga/Desktop/picotest/Cuphead/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/bilga/Desktop/picotest/Cuphead -BC:/Users/bilga/Desktop/picotest/Cuphead/proj.win32 --check-stamp-file C:/Users/bilga/Desktop/picotest/Cuphead/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeCXXCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeRCCompiler.cmake;C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\3.25.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\picopark\PikoPark\Classes\GameOverScene.h" />
+    <ClInclude Include="..\..\..\picopark\PikoPark\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\PauseScene.h" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\main.h" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\resource.h" />
+    <ClCompile Include="..\..\..\picopark\PikoPark\Classes\GameOverScene.cpp" />
+    <ClCompile Include="..\..\..\picopark\PikoPark\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\PauseScene.cpp" />
+    <ClCompile Include="C:\Users\bilga\Desktop\picotest\Cuphead\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Users\bilga\Desktop\picotest\Cuphead\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Users\bilga\Desktop\picotest\Cuphead\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Users\bilga\Desktop\picotest\Cuphead\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{69C23CA0-80A7-3DF1-AF30-BD1A9160D4B6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\SYNC_RESOURCE-Cuphead.vcxproj">
+      <Project>{E072706C-F8F9-3622-9D08-7BD48761FDC5}</Project>
+      <Name>SYNC_RESOURCE-Cuphead</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{9E5795B3-D667-3A9C-9A83-6834953B1576}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{5C5A188A-A0DD-3571-B6EC-3C8EC3257A1C}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{B4B1AAFA-F9F8-3F5B-B236-3B1F3E6A9748}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{2D642315-7513-3E46-B324-32D4EF89B29C}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{1F6C325E-5E05-314D-9CA1-71EB8862D624}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{F4910F2A-5617-3AE6-AA0C-BAAD29174A02}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{81068C95-6372-3D6D-8CB0-E63697EC0D8E}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{0A3622BE-1B2F-338B-BC68-5CC63BB16555}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{8BAE37EF-A3C2-3707-91CF-ED23CB1E49E8}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{4A8C30C7-0AD6-398A-879E-2D77A6D9D76B}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{49286129-3784-3C6E-8187-D5979E967A44}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\bilga\Desktop\picotest\Cuphead\proj.win32\engine\external\external.vcxproj">
+      <Project>{5FEDC2AB-F1A5-3078-847A-C8F540D5F55B}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
